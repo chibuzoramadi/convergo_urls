@@ -62,10 +62,9 @@
     <h2>3. How We Use Your Data</h2>
     <p>User data powers Convergo's core functionality:</p>
     <ul>
-        <li><strong>Service Delivery:</strong> Store conversations in MySQL, generate AI replies, display dashboard analytics</li>
+        <li><strong>Service Delivery:</strong> Generate AI replies, display dashboard analytics</li>
         <li><strong>Meta Integration:</strong> Forward webhook messages to OpenAI, send AI replies back through WhatsApp API</li>
         <li><strong>Account Management:</strong> Authentication, subscription status, usage limits</li>
-        <li><strong>Security:</strong> Fraud detection, rate limiting, access controls</li>
         <li><strong>Improvement:</strong> Anonymized analytics for product development</li>
     </ul>
 
@@ -84,7 +83,7 @@
     <h2>5. Data Security</h2>
     <ul>
         <li><strong>Encryption:</strong> HTTPS/TLS for transit, AES-256 at rest (AWS-managed keys)</li>
-        <li><strong>Authentication:</strong> JWT tokens with 15-minute expiry, bcrypt password hashing</li>
+        <li><strong>Authentication:</strong> JWT tokens with 30-minute expiry, bcrypt password hashing</li>
         <li><strong>Isolation:</strong> Multi-tenant MySQL schemas separate customer data</li>
         <li><strong>Access:</strong> Least-privilege IAM roles, audit logging, regular penetration testing</li>
     </ul>
@@ -92,7 +91,7 @@
     <h2>6. Data Retention</h2>
     <ul>
         <li><strong>Active Accounts:</strong> Data retained while subscription active</li>
-        <li><strong>Inactive Accounts:</strong> Auto-delete after 90 days of no login/activity</li>
+        <li><strong>Inactive Accounts:</strong> Auto-Freeze after 90 days of no login/subscription</li>
         <li><strong>Server Logs:</strong> 30 days maximum (anonymized after 7 days)</li>
         <li><strong>Backups:</strong> Encrypted, retained 7 days, purged on account deletion</li>
     </ul>
@@ -113,7 +112,8 @@
     </div>
 
     <footer>
-        © 2025 Convergo. All rights reserved. | <a href="data-deletion.html">User Data Deletion Policy</a>
+        © 2025 Convergo. All rights reserved. | <a href="data-deletion.html">https://github.com/chibuzoramadi/convergo_urls/blob/main/User_data_deletion.html</a>
     </footer>
 </body>
 </html>
+
